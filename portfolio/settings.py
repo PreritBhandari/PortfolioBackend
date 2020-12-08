@@ -84,10 +84,16 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+# posgresql database using for heroku
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd7a9t5u37fpnhn',
+        'HOST': 'ec2-54-85-13-135.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'ujjeqolwbqvqok',
+        'PASSWORD': 'fdb01edab1f35856bbab8467183d7bb431070903d3f8817665f801e4ef351dc1'
     }
 }
 
