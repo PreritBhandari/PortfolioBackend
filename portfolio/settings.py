@@ -96,6 +96,8 @@ DATABASES = {
         'USER': 'ujjeqolwbqvqok',
         'PASSWORD': 'fdb01edab1f35856bbab8467183d7bb431070903d3f8817665f801e4ef351dc1'
     }
+
+    
 }
 
 # Password validation
