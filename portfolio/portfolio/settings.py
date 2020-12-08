@@ -24,7 +24,9 @@ SECRET_KEY = 'mm9z131_eawk-^hbt4(&9div!yg!=4^m1cg!_30b1*cz3ar68p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 # Application definition
 
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://preritbhandari.com.np"
 
 ]
 
