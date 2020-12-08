@@ -25,7 +25,8 @@ SECRET_KEY = 'mm9z131_eawk-^hbt4(&9div!yg!=4^m1cg!_30b1*cz3ar68p'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '*'
+    '*',
+
 ]
 
 # Application definition
@@ -89,15 +90,16 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # posgresql database using for heroku
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ded37v8pnd9mvt',
-        'HOST': 'ec2-54-146-118-15.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'bufpjazmpueodq',
-        'PASSWORD': '47f8e4c77bfbc467b11199b9af8029098a105b4b17de66a9a285216026c56f52'
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'dcqd6c7gso5oim',
+        # 'HOST': 'ec2-54-156-47-113.compute-1.amazonaws.com',
+        # 'PORT': 5432,
+        # 'USER': 'yjuloopcjqfcsx',
+        # 'PASSWORD': '5fa501b0f696aa897ac386d5de528f77bdcfd5770f6cd4f28fcee3dbf9629fa1'
+
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-
-
 
 }
 
