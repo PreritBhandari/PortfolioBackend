@@ -6,6 +6,7 @@ from .serializers import ListCreateSerializer
 
 
 # Using Generic Class based views
+
 class ListCreateBlog(ListCreateAPIView):
     serializer_class = ListCreateSerializer
     queryset = Blog.objects.all()

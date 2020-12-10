@@ -25,8 +25,8 @@ SECRET_KEY = 'mm9z131_eawk-^hbt4(&9div!yg!=4^m1cg!_30b1*cz3ar68p'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'http://127.0.0.1:8000',
-    'https://preritbhandari.com.np'
+    '127.0.0.1',
+    'preritbhandari.com.np'
 
 ]
 
