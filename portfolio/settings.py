@@ -24,11 +24,10 @@ SECRET_KEY = 'mm9z131_eawk-^hbt4(&9div!yg!=4^m1cg!_30b1*cz3ar68p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'preritbhandari.com.np'
-    'preritbhandari.pythonanywhere.com'
+    'preritbhandari.com.np',
+    'preritbhandari.pythonanywhere.com',
 
 ]
 
