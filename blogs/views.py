@@ -1,4 +1,5 @@
 from rest_framework.generics import ListCreateAPIView, ListAPIView
+from rest_framework.permissions import IsAuthenticated
 
 from .models import Blog
 from .serializers import ListCreateSerializer
@@ -6,9 +7,15 @@ from .serializers import ListCreateSerializer
 
 # Using Generic Class based views
 
-class ListCreateBlog(ListCreateAPIView):
+class ListBlog(ListAPIView):
     serializer_class = ListCreateSerializer
     queryset = Blog.objects.all()
+
+
+class CreateBlog(ListCreateAPIView):
+    serializer_class = ListCreateSerializer
+    queryset = Blog.objects.all()
+    permission_classes = [IsAuthenticated]
 
 
 class ListByCategory(ListAPIView):

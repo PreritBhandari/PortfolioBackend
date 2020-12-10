@@ -1,9 +1,10 @@
 from django.urls import path
 
-from .views import ListCreateBlog, ListByCategory
+from .views import ListBlog, ListByCategory, CreateBlog
 
 urlpatterns = [
 
-    path('create/', ListCreateBlog.as_view()),
+    path('create/', CreateBlog.as_view()),
+    path('listblog/', ListBlog.as_view()),
     path('list/<str:category>/', ListByCategory.as_view())
 ]
