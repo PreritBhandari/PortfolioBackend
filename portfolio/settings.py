@@ -22,10 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'mm9z131_eawk-^hbt4(&9div!yg!=4^m1cg!_30b1*cz3ar68p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    '*',
+    'http://127.0.0.1:8000',
+    'https://preritbhandari.com.np'
 
 ]
 
@@ -139,7 +140,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
